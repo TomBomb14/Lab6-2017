@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AdulthoodContext-Web.config Connection String" description="AdulthoodContext Connection String used in web.config by the application to access the database." defaultValue="data source=sql7003.site4now.net;initial catalog=DB_A2FE4B_Week11;user id=DB_A2FE4B_Week11_admin;password=prog3542;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\users\\sithk\\source\\repos\\Thomas\.Irwin\.Ryan\.Falcon\.Lab6\\Thomas\.Irwin\.Ryan\.Falcon\.Lab6\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdulthoodContext']/@connectionString" />
+  </parameter>
+</parameters>
