@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 31px;
+    font-family: 'Oxygen';
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -14,4 +14,73 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.hero {
+    background-image: url(https://cdn.wallpapersafari.com/16/70/HS8c25.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: 50% 65%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.inverted {
+    color: white;
+}
+
+.hero-content {
+    
+}
+
+.lead {
+    background: rgba(0,0,0,0.2);
+    padding: 30px;
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+}
+
+.wrapper-home {
+    background: #ffca00;
+    padding: 100px;
+    color: #d14c28;
+}
+
+h2{
+    font-weight: 700;
+}
+
+footer {
+    padding: 50px;
+    background: #d14c28;
+    color: white;
+}
+
+.btn-default {
+    background: #d14c28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-default:hover {
+    background: #bd3915;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
 }
