@@ -10,7 +10,7 @@ namespace Thomas.Irwin.Ryan.Falcon.Lab6.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "My 🌮 CMS";
 
             return View();
         }
