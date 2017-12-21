@@ -32,7 +32,7 @@
     <div class="container-fluid">
         @RenderBody()
 
-        <footer>
+        <footer id="footer" class="footerClass">
             <p>&copy; @DateTime.Now.Year - CTRL-Innovations</p>
         </footer>
     </div>
@@ -42,3 +42,12 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+<script>
+	var name = 'indexPage';
+	var name2 = 'postsPage';
+	if ($("#" + name).length != 0 || $("#" + name2).length != 0) {
+		$('footer').removeClass('footerClass');
+	}
+</script>
+

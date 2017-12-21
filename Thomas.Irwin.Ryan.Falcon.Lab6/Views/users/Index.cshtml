@@ -4,42 +4,45 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 style="text-align: center; margin-bottom:20px;">User's List</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.firstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.lastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.email)
-        </th>
-        <th></th>
-    </tr>
+<div class="btn btn-default" style="display:flex;justify-content: center;margin: 0 auto; width: 200px;">
+    @Html.ActionLink("Create New User", "Create")
+</div>
+<div style="margin-left:15%; margin-right:15%;">
+	<table class="table">
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.firstName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.lastName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.email)
+			</th>
+			<th></th>
+		</tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.firstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.email)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.userId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.userId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.userId })
-        </td>
-    </tr>
-}
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.firstName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.lastName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.email)
+				</td>
+				<td style="text-align:right;">
+					<div class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.userId })</div>
+					<div class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.userId })</div>
+					<div class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.userId })</div>
+				</td>
+			</tr>
+		}
 
-</table>
+	</table>
+</div>
