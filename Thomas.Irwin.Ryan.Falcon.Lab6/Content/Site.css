@@ -1,6 +1,7 @@
 ﻿body {
-    padding-top: 31px;
-    font-family: 'Oxygen';
+	padding-top: 31px;
+	font-family: 'Oxygen';
+	background-color: #ffca00;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -60,9 +61,15 @@ h2{
 }
 
 footer {
-    padding: 50px;
-    background: #d14c28;
-    color: white;
+	padding: 50px;
+	background: #d14c28;
+	color: white;
+}
+
+.footerClass {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .btn-default {
