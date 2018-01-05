@@ -197,3 +197,4 @@ C:\Users\Ryan\code\Lab6-2017\Thomas.Irwin.Ryan.Falcon.Lab6\obj\Release\Thomas.Ir
 C:\Users\Ryan\code\Lab6-2017\Thomas.Irwin.Ryan.Falcon.Lab6\obj\Release\Thomas.Irwin.Ryan.Falcon.Lab6.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\code\Lab6-2017\Thomas.Irwin.Ryan.Falcon.Lab6\obj\Release\Thomas.Irwin.Ryan.Falcon.Lab6.dll
 C:\Users\Ryan\code\Lab6-2017\Thomas.Irwin.Ryan.Falcon.Lab6\obj\Release\Thomas.Irwin.Ryan.Falcon.Lab6.pdb
+C:\Users\SIthk\source\repos\Thomas.Irwin.Ryan.Falcon.Lab6\Thomas.Irwin.Ryan.Falcon.Lab6\obj\Release\Thomas.Irwin.Ryan.Falcon.Lab6.csprojResolveAssemblyReference.cache

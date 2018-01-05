@@ -4,11 +4,9 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 style="text-align: center; margin-bottom:30px;">User Details</h2>
 
 <div>
-    <h4>user</h4>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.firstName)
@@ -37,6 +35,10 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.userId }) |
-    @Html.ActionLink("Back to List", "Index")
+	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+		@Html.ActionLink("Edit", "Edit", new { id = Model.userId })
+	</div>
+	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+		@Html.ActionLink("Back to List", "Index")
+	</div>
 </p>

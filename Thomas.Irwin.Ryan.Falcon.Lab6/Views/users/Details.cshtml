@@ -6,8 +6,8 @@
 
 <h2 style="text-align: center; margin-bottom:30px;">User Details</h2>
 
-<div>
-    <dl class="dl-horizontal">
+<div style="text-align:center;">
+    <dl class="dl-horizontal" style="display:inline-block;">
         <dt>
             @Html.DisplayNameFor(model => model.firstName)
         </dt>
@@ -33,12 +33,13 @@
         </dd>
 
     </dl>
+    <p>
+        <div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.userId })
+        </div>
+        <div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </p>
 </div>
-<p>
-	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
-		@Html.ActionLink("Edit", "Edit", new { id = Model.userId })
-	</div>
-	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
-		@Html.ActionLink("Back to List", "Index")
-	</div>
-</p>
+

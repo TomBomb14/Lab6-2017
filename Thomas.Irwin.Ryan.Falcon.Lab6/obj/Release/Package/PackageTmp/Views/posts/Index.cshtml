@@ -4,48 +4,36 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 id="postsPage" style="text-align: center; margin-bottom:20px;">Post's List</h2>
 
-<p>
+<div class="btn btn-default" style="display:flex;justify-content: center;margin: 0 auto; width: 200px;">
     @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.user.firstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.category)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.content)
-        </th>
-        <th></th>
-    </tr>
+</div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.user.firstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.category)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.content)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.postId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.postId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.postId })
-        </td>
-    </tr>
-}
+<div style="margin-left:15%; margin-right:15%">
+	@foreach (var item in Model)
+	{
+		<div style="margin-bottom:10px; display:inline-block; width:100%">
+			<div style="float:left;">
+				<div>
+					@Html.DisplayFor(modelItem => item.user.firstName)
+				</div>
+				<div>
+					@Html.DisplayFor(modelItem => item.title)
+				</div>
+				<div>
+					@Html.DisplayFor(modelItem => item.category)
+				</div>
+				<div style="width: 600px;">
+					@Html.DisplayFor(modelItem => item.content)
+				</div>
+			</div>
+			<div style="float:right; margin-top:25px; display:inline-flex; vertical-align:middle;">
+				<div class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.postId })</div>
+				<div class="btn btn-default" style="margin-left:10px;">@Html.ActionLink("Details", "Details", new { id = item.postId })</div>
+				<div class="btn btn-default" style="margin-left:10px;">@Html.ActionLink("Delete", "Delete", new { id = item.postId })</div>
+			</div>
 
-</table>
+		</div>
+	}
+</div>
