@@ -44,13 +44,13 @@
 
     </dl>
     <div>
-        <input type="submit" value="Delete" class="btn btn-default" />
+        <input type="submit" value="Delete" class="btn btn-default" style="color:white;" />
     </div>
     <br />
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+        <div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px; color:white;">
             @Html.ActionLink("Back to List", "Index")
         </div>
     }

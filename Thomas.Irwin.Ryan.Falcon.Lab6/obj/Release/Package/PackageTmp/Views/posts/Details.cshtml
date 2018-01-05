@@ -7,46 +7,30 @@
 <h2 style="text-align: center; margin-bottom:30px;">Post Details</h2>
 
 <div>
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.user.firstName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.user.firstName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.title)
-        </dt>
-
-        <dd>
+    <div style="margin-bottom:10px; display:inline-block; width:100%; text-align: center">
+        <h3>
             @Html.DisplayFor(model => model.title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.category)
-        </dt>
-
-        <dd>
+        </h3>
+        <div style="padding: 10px; font-weight:600;">
+            Author:
+            @Html.DisplayFor(model => model.user.firstName)
+            @Html.DisplayFor(model => model.user.lastName)
+        </div>
+        <div style="padding: 10px; font-weight:600;">
+            Category:
             @Html.DisplayFor(model => model.category)
-        </dd>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.content)
-        </dt>
+            <div style=" text-align:match-parent; padding-bottom:15px;">
 
-        <dd>
-            @Html.DisplayFor(model => model.content)
-        </dd>
-
-    </dl>
-</div>
-<p>
-	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+                @Html.DisplayFor(model => model.content)
+            </div>
+        </div>
+<div style="text-align:center;">
+	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px; color:white; ">
 		@Html.ActionLink("Edit", "Edit", new { id = Model.postId })
 	</div>
-	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px;">
+	<div class="btn btn-default" style="margin-left: 20px; margin-bottom:150px; color:white;">
 		@Html.ActionLink("Back to List", "Index")
 	</div>
-</p>
+</div>

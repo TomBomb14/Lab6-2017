@@ -13,26 +13,27 @@
 <div style="margin-left:15%; margin-right:15%">
 	@foreach (var item in Model)
 	{
-		<div style="margin-bottom:10px; display:inline-block; width:100%">
-			<div style="float:left;">
-				<div>
+		<div style="margin-bottom:10px; display:inline-block; width:100%; text-align: center">
+             <h3 >
+                @Html.DisplayFor(modelItem => item.title)
+            </h3>
+				<div style="padding: 10px; font-weight:600;">
+                    Author:
 					@Html.DisplayFor(modelItem => item.user.firstName)
+                    @Html.DisplayFor(modelItem => item.user.lastName)
 				</div>
-				<div>
-					@Html.DisplayFor(modelItem => item.title)
-				</div>
-				<div>
-					@Html.DisplayFor(modelItem => item.category)
-				</div>
-				<div style="width: 600px;">
+            
+           
+				<div style=" text-align:match-parent; padding-bottom:15px;">
+                    
 					@Html.DisplayFor(modelItem => item.content)
 				</div>
-			</div>
-			<div style="float:right; margin-top:25px; display:inline-flex; vertical-align:middle;">
-				<div class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.postId })</div>
-				<div class="btn btn-default" style="margin-left:10px;">@Html.ActionLink("Details", "Details", new { id = item.postId })</div>
-				<div class="btn btn-default" style="margin-left:10px;">@Html.ActionLink("Delete", "Delete", new { id = item.postId })</div>
-			</div>
+			
+			
+				<div class="btn btn-default" style="color:white;">@Html.ActionLink("Edit", "Edit", new { id = item.postId })</div>
+				<div class="btn btn-default" style="margin-left:10px; color:white;">@Html.ActionLink("Details", "Details", new { id = item.postId })</div>
+				<div class="btn btn-default" style="margin-left:10px; color:white;">@Html.ActionLink("Delete", "Delete", new { id = item.postId })</div>
+			
 
 		</div>
 	}
